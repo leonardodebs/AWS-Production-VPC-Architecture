@@ -1,0 +1,14 @@
+project_name = "cal"
+environment  = "staging"
+aws_region   = "us-west-2"
+vpc_cidr     = "10.2.0.0/16"
+azs = ["us-west-2a", "us-west-2b"]
+public_subnet_cidrs   = ["10.2.1.0/24", "10.2.2.0/24"]
+private_subnet_cidrs  = ["10.2.11.0/24", "10.2.12.0/24"]
+database_subnet_cidrs = ["10.2.21.0/24", "10.2.22.0/24"]
+single_nat_gateway      = true
+enable_vpc_endpoints    = true
+flow_log_traffic_type   = "REJECT"
+flow_log_retention_days = 7
+app_port              = 8080
+bastion_allowed_cidrs = ["SEU_IP_AQUI/32"]

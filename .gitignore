@@ -1,0 +1,43 @@
+# Terraform — artefatos de execução (NUNCA commitar)
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfstate.local
+
+# Override de backend local gerado pelo script test-local.ps1
+backend_override.tf
+tfplan
+*.tfplan
+
+# Valores reais de variáveis (NUNCA commitar)
+terraform.tfvars
+backend.tfvars
+*.auto.tfvars
+
+# Logs de plan para revisão local
+plan_output.txt
+plan_prod.txt
+
+# Credenciais e chaves
+.aws/
+*.pem
+*.key
+credentials
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (checkov)
+__pycache__/
+*.pyc
+.venv/

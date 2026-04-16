@@ -1,0 +1,52 @@
+# ============================================================
+# Valores do ambiente dev
+# ATENÇÃO: não commitar este arquivo — adicionar ao .gitignore
+# ============================================================
+
+project_name = "cal"
+environment  = "dev"
+aws_region   = "us-west-2"
+
+# --- VPC ---
+vpc_cidr = "10.1.0.0/16"
+
+# --- Availability Zones (2 AZs em dev) ---
+azs = [
+  "us-west-2a",
+  "us-west-2b"
+]
+
+# --- Subnets Públicas ---
+public_subnet_cidrs = [
+  "10.1.1.0/24",
+  "10.1.2.0/24"
+]
+
+# --- Subnets Privadas ---
+private_subnet_cidrs = [
+  "10.1.11.0/24",
+  "10.1.12.0/24"
+]
+
+# --- Subnets de Banco ---
+database_subnet_cidrs = [
+  "10.1.21.0/24",
+  "10.1.22.0/24"
+]
+
+# --- NAT: 1 compartilhado em dev (economia de custo) ---
+single_nat_gateway = true
+
+# --- VPC Endpoints (gratuitos — sempre true) ---
+enable_vpc_endpoints = true
+
+# --- Flow Logs: apenas rejeições em dev, 7 dias ---
+flow_log_traffic_type   = "REJECT"
+flow_log_retention_days = 7
+
+# --- Aplicação ---
+app_port = 8080
+
+# --- Bastion: substitua pelo seu IP público ---
+# Descubra seu IP: curl ifconfig.me
+bastion_allowed_cidrs = ["SEU_IP_AQUI/32"]

@@ -1,0 +1,21 @@
+# ==============================================================
+# backend-local.tf.override
+#
+# Arquivo de OVERRIDE para testes locais sem S3.
+# Substitui o backend S3 por armazenamento local (arquivo .tfstate).
+#
+# COMO USAR:
+#   Copie este arquivo e renomeie para backend-local.tf.override → não,
+#   na verdade renomeie para: backend_override.tf
+#   (Terraform carrega automaticamente qualquer *_override.tf)
+#
+#   Ou use o script: powershell scripts\test-local.ps1
+#
+# ATENÇÃO: não commitar o .tfstate gerado localmente.
+# ==============================================================
+
+terraform {
+  backend "local" {
+    path = "terraform.tfstate.local"
+  }
+}
