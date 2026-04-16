@@ -22,4 +22,3 @@ Bem-vindo à documentação técnica do projeto **AWS Production VPC Architectur
 
 ---
 
-*Parte do repositório [cloud-architecture-lab](https://github.com/leonardodebs/cloud-architecture-lab) — 20 projetos de infraestrutura cloud.*
