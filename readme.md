@@ -1,6 +1,6 @@
-# Project 01 — AWS Production VPC Architecture
+# AWS Production VPC Architecture
 
-> Multi-AZ, production-grade VPC with layered security, NAT Gateway high availability, and full IaC coverage via Terraform.
+> Multi-AZ, VPC de nível de produção com segurança em camadas, alta disponibilidade do NAT Gateway e cobertura completa de IaC via Terraform.
 
 [![Terraform](https://img.shields.io/badge/Terraform-≥1.5-7B42BC?logo=terraform)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-us--west--2-FF9900?logo=amazonaws)](https://aws.amazon.com/)
