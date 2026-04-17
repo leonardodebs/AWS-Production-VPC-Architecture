@@ -5,6 +5,9 @@
 [![Terraform](https://img.shields.io/badge/Terraform-≥1.5-7B42BC?logo=terraform)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-us--west--2-FF9900?logo=amazonaws)](https://aws.amazon.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+ 
+![Project Stack](stack.png)
+
 
 ---
 
